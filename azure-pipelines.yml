@@ -13,8 +13,8 @@ variables:
   imageRepository: 'project1'
   containerRegistry: 'katuricontainerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
-  imagePullSecret: 'katuricontainerregistryda9d-auth'
+  tag: '$(Build.BuildNumber)'
+
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
